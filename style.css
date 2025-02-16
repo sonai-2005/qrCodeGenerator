@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(135deg,green ,white, rgb(80, 80, 228));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qrcode{
+    height: 50vh;
+    width: 40vh;
+    background:linear-gradient(135deg , black, rgba(47, 70, 218, 0.371));
+    border-radius: 2vh;
+}
+.input {
+    padding: 1vh;
+    
+    display: grid;
+    grid-template-columns: 5fr 1fr; /* 5:1 ratio */
+    
+}
+.input input{
+    min-width:2vh ;
+    height: 6vh;
+    border-radius: 1vh;
+    padding-left: 1vh;
+}
+
+.input button{
+    width: 10vh;
+    border-radius: 2vh;
+    transition: 0.15s transform ease-in-out  ;
+}
+.input  button:hover{
+    transform:scale(1.1);
+}
+.input  button:active{
+    transform:scale(0.9);
+}
+.qrcontain{
+    border-radius: 2vh;
+    margin: 1vh;
+    height: 35vh;
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.qrcontain img{
+    height: 35vh;
+    width: 100%;
+}
