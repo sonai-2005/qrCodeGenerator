@@ -15,6 +15,7 @@ async function getqr(new_url) {
     const ans = await response.blob();
     const imageUrl = URL.createObjectURL(ans); // Generate image URL
     qr.innerHTML = `<img src="${imageUrl}" alt="QR Code">`
+    input.value=``;
 
     }
     catch(error){
